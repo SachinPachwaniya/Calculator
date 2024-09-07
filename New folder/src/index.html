@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="bg-yellow-200 flex flex-col gap-6 font-serif cursor-pointer">
+    <nav
+      class="h-14 bg-black flex flex-row justify-between items-center px-8 py-4"
+    >
+      <div class="flex h-14 text-white items-center">
+        <img src="./images/logo.png" alt="" class="h-full" />
+        <h1 class="text-xl">Spotify</h1>
+        <audio class="bg-red-500" src="../songs/1.mp3">song</audio>
+      </div>
+      <ul
+        class=" gap-10 text-white flex"
+      >
+        <li>Home</li>
+        <li>About</li>
+        <li>Settings</li>
+      </ul>
+    </nav>
+
+    <div class="h-[560px] w-full flex justify-center items-center">
+      <div
+        class="h-full relative w-[70%] bg-[url('../images/bg.jpg')] bg-cover rounded-2xl"
+      >
+        <div id="playlist" class="absolute top-3 left-5 flex flex-col gap-2">
+          <h1 class="text-white text-center font-bold text-xl h-14 w-[280px]">
+            Here a Lofi Song Playlist
+          </h1>
+          
+          
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="relative h-24 w-full bg-black flex flex-col justify-center items-center gap-3 text-white"
+    >
+      <input
+        id="myProgessBar"
+        class="w-[60%]"
+        type="range"
+        name="range"
+        value=""
+        min="0"
+        max="100"
+      />
+      <div class="flex flex-row gap-8">
+        <div><i id="prevIcon" class="fa-solid fa-backward"></i></div>
+        <div>
+          <i
+            onclick="playSong()"
+            id="ctrlIcon"
+            class="fa-solid fa-play text-xl"
+          ></i>
+        </div>
+        <div><i id="nextIcon" class="fa-solid fa-forward"></i></div>
+      </div>
+      <!-- <div class="h-4 absolute w-full">
+         <img id="gif" src="../images/playing.gif" alt="gif" class="h-full " /> 
+         (Sachin pachwaniya)
+      </div> -->
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
