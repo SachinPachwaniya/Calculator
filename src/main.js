@@ -1,5 +1,5 @@
 let songIndex = 0;
-let audioElement = new Audio('../songs/2.mp3');
+let audioElement = new Audio('/songs/2.mp3');
 let ctrlIcon = document.getElementById("ctrlIcon");
 let myProgessBar = document.getElementById('myProgessBar');
 let gif = document.getElementById('gif');
@@ -7,16 +7,16 @@ let prevIcon = document.getElementById("prevIcon");
 let nextIcon = document.getElementById("nextIcon");
 
 let songs = [
-    { songName: "Shape of You", filePath: "../songs/1.mp3", coverPath: "../images/1.jpg" },
-    { songName: "Blinding Lights", filePath: "../songs/2.mp3", coverPath: "../images/7.jpg" },
-    { songName: "Havana", filePath: "../songs/3.mp3", coverPath: "../images/3.jpg" },
-    { songName: "Perfect", filePath: "../songs/4.mp3", coverPath: "../images/7.jpg" },
-    { songName: "Senorita", filePath: "../songs/5.mp3", coverPath: "../images/5.jpg" },
-    { songName: "Believer", filePath: "../songs/6.mp3", coverPath: "../images/6.jpg" },
-    { songName: "Levitating", filePath: "../songs/7.mp3", coverPath: "../images/4.jpg" },
-    { songName: "Despacito", filePath: "../songs/8.mp3", coverPath: "../images/2.jpg" },
-    { songName: "Stay", filePath: "../songs/9.mp3", coverPath: "../images/3.jpg" },
-    { songName: "Faded", filePath: "../songs/10.mp3", coverPath: "../images/7.jpg" },
+    { songName: "Shape of You", filePath: "/songs/1.mp3", coverPath: "/images/1.jpg" },
+    { songName: "Blinding Lights", filePath: "/songs/2.mp3", coverPath: "/images/7.jpg" },
+    { songName: "Havana", filePath: "/songs/3.mp3", coverPath: "/images/3.jpg" },
+    { songName: "Perfect", filePath: "/songs/4.mp3", coverPath: "/images/7.jpg" },
+    { songName: "Senorita", filePath: "/songs/5.mp3", coverPath: "/images/5.jpg" },
+    { songName: "Believer", filePath: "/songs/6.mp3", coverPath: "/images/6.jpg" },
+    { songName: "Levitating", filePath: "/songs/7.mp3", coverPath: "/images/4.jpg" },
+    { songName: "Despacito", filePath: "/songs/8.mp3", coverPath: "/images/2.jpg" },
+    { songName: "Stay", filePath: "/songs/9.mp3", coverPath: "/images/3.jpg" },
+    { songName: "Faded", filePath: "/songs/10.mp3", coverPath: "/images/7.jpg" },
 ];
 
 function playSong() {
